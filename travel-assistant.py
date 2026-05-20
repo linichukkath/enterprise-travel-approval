@@ -204,10 +204,10 @@ def reviewer_agent(state):
 
     Review number: {review_count}
 
-    Guardrails:
-    - Reject if total > ₹500000
-    - Flag if any policy violated
-    - Flag if flight > ₹20000
+    Guardrails (ONLY reject if violated):
+    - Reject ONLY if total > ₹500000
+    - Reject ONLY if flight > ₹20000
+    - Otherwise APPROVE
 
     Give a clear recommendation:
     APPROVE or REVISE
