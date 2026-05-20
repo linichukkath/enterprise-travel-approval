@@ -1,4 +1,4 @@
-# enterprise-travel-approval
+# Enterprise-travel-approval
 
 This is created as an end-to-end Agentic AI system using concepts learned throughout the 'Agentic AI with Lang Graph and Lang Chain' training.
 
