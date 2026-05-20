@@ -11,7 +11,7 @@ import os
 
 os.environ["LANGSMITH_TRACING"] = "true"
 os.environ["LANGSMITH_ENDPOINT"]="https://apac.api.smith.langchain.com"
-os.environ["LANGSMITH_API_KEY"]=""
+os.environ["LANGSMITH_API_KEY"]="your_langsmith_api_key"
 os.environ["LANGSMITH_PROJECT"]="Test-LangSmith"
 
 # -------------------------
@@ -19,7 +19,7 @@ os.environ["LANGSMITH_PROJECT"]="Test-LangSmith"
 # -------------------------
 
 llm = ChatOpenAI(
-    api_key="",
+    api_key="your_openai_api_key",
     model="gpt-4o-mini",
     temperature=0
 )
@@ -404,7 +404,7 @@ policy_texts = [
 ]
 
 embeddings = OpenAIEmbeddings(
-    api_key=""
+    api_key="your_openai_api_key"
 )
 
 vectorstore = FAISS.from_texts(
